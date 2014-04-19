@@ -1,0 +1,11 @@
+
+Initial setup of local workspace.
+
+
+  $ mkdir -p src/greenmobile/gs-components
+  $ cd src/greenmobile/gs-components
+  $ git init
+  $ git remote add origin git@bitbucket.org:vbancroft/gs-components.git
+
+
+
