@@ -21,4 +21,11 @@ Publish the contents of the master branch in the origin repository to the new gi
 
  $ git push gh-gs origin:master
 
-The push the new license and README.md to the origin server
+In order to get some new content from the 
+
+  $ git pull gh-gs master
+
+Then push the new license and README.md to the origin server
+
+  $ git push 
+
