@@ -29,3 +29,21 @@ Then push the new license and README.md to the origin server
 
   $ git push 
 
+Consider an example where we have the project checked out in eclipse, and make changes to fix up the 
+Base64 encode and decode functionality to use the apache commons codec package.  The commit in the IDE
+just posts it to the local repository.  This requires that the changes be pushed to the bit bucket, e.g.
+
+  $ git push
+  Counting objects: 62, done.
+  Delta compression using up to 8 threads.
+  Compressing objects: 100% (24/24), done.
+  Writing objects: 100% (35/35), 13.86 KiB | 0 bytes/s, done.
+  Total 35 (delta 11), reused 0 (delta 0)
+  To https://vbancroft@bitbucket.org/vbancroft/gs-components.git
+     7ffc1df..8a4756e  master -> master
+
+Another repostitory that has multiple remotes must pull down the changes and push them back up to the github,
+
+  $ git pull 
+  $ git push gh-gs origin:master
+
