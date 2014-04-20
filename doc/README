@@ -12,3 +12,13 @@ Some config options are handy to set, such as,
   $ git config --global user.email vic.bancroft@greenskycredit.com
   $ git config --global push.default simple
 
+Add a second remote server, and look at the result
+
+  $ git remote add gh-gs https://github.com/oommoo/gs-components.git
+  $ git remote -v
+
+Publish the contents of the master branch in the origin repository to the new github remote (gh-gs)
+
+ $ git push gh-gs origin:master
+
+The push the new license and README.md to the origin server
